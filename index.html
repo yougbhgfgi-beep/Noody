@@ -573,8 +573,8 @@
                            <div className="absolute -top-20 -right-20 w-40 h-40 bg-pink-500/20 rounded-full blur-3xl group-hover:bg-pink-500/30 transition-all duration-700"></div>
                            <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-indigo-500/20 rounded-full blur-3xl group-hover:bg-indigo-500/30 transition-all duration-700"></div>
                            
-                            <div className="mb-10 flex justify-center scale-125">
-                                <div className="bg-white/10 p-2 rounded-full animate-float shadow-[0_0_30px_rgba(251,113,133,0.4)] overflow-hidden w-20 h-20 border-2 border-rose-500/50">
+                            <div className="mb-8 flex justify-center">
+                                <div className="bg-white/10 p-1.5 rounded-full animate-float shadow-[0_0_40px_rgba(251,113,133,0.5)] overflow-hidden w-28 h-28 border-2 border-rose-400/60">
                                     <img src="./img2.jpeg" alt="Noode" className="w-full h-full object-cover rounded-full" />
                                 </div>
                             </div>
@@ -760,19 +760,19 @@
                     <section className="py-24 relative z-10 bg-slate-900/20 border-y border-slate-800/50">
                         <div className="max-w-6xl mx-auto px-6">
                             <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-rose-300 drop-shadow-md">ليه بحبك؟ 🤔💜</h2>
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div className="grid grid-cols-2 gap-4 md:gap-6">
                                 {[
-                                    { title: "حنيتك", desc: "أحن قلب في الدنيا، عطفك وحنيتك عليا بالدنيا وما فيها 🥰", icon: "🥰" },
-                                    { title: "أماني", desc: "في كل عيد وأنت السند والجبل اللي بتحامى فيه 🛡️", icon: "🛡️" },
+                                    { title: "حنيتك", desc: "أحن قلب في الدنيا، عطفك وحنيتك بالدنيا 🥰", icon: "🥰" },
+                                    { title: "أماني", desc: "في كل عيد وأنت السند اللي بتحامى فيه 🛡️", icon: "🛡️" },
                                     { title: "ضحكتك", desc: "ضحكتك بتنور أيامي وبتخلي العيد عيدين 😁", icon: "😁" },
                                     { title: "قلبك الأبيض", desc: "أنقى وأطيب قلب، بشوف فيك فرحة العيد دايماً 🤍", icon: "🤍" },
                                     { title: "عيونك", desc: "بشوف فيهم مستقبلي وكل أعيادي الجاية معاك 👀", icon: "👀" },
-                                    { title: "وجودك", desc: "كفاية بس إنك موجود، ده أحلى عيدية من ربنا ليا 🌟", icon: "🌟" }
+                                    { title: "وجودك", desc: "كفاية بس إنك موجود، ده أحلى عيدية 🌟", icon: "🌟" }
                                 ].map((item, i) => (
-                                    <div key={i} className="bg-slate-900/60 backdrop-blur-md p-8 rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.5)] border border-slate-700/50 hover:bg-slate-800/80 transition-all transform hover:-translate-y-3 hover:shadow-[0_0_25px_rgba(244,63,94,0.3)] group">
-                                        <div className="text-5xl mb-6 transform group-hover:scale-110 transition-transform">{item.icon}</div>
-                                        <h3 className="text-2xl font-bold text-rose-400 mb-4">{item.title}</h3>
-                                        <p className="text-slate-300 font-medium text-lg leading-relaxed">{item.desc}</p>
+                                    <div key={i} className="bg-slate-900/60 backdrop-blur-md p-4 md:p-6 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.5)] border border-slate-700/50 hover:bg-slate-800/80 transition-all transform hover:-translate-y-2 hover:shadow-[0_0_20px_rgba(244,63,94,0.3)] group">
+                                        <div className="text-3xl md:text-4xl mb-3 transform group-hover:scale-110 transition-transform">{item.icon}</div>
+                                        <h3 className="text-sm md:text-lg font-bold text-rose-400 mb-2">{item.title}</h3>
+                                        <p className="text-slate-300 font-medium text-xs md:text-sm leading-relaxed">{item.desc}</p>
                                     </div>
                                 ))}
                             </div>
@@ -1239,8 +1239,8 @@
             useEffect(() => {
                 if (mode && messages.length === 0) {
                     const txt = mode === 'habeebty'
-                        ? "\u064a\u0627 \u0631\u0648\u062d \u0642\u0644\u0628\u064a \ud83d\ude0d.. \u0648\u062d\u0634\u062a\u064a\u0646\u064a \u0623\u0648\u064a \u064a\u0627 \u062d\u0628\u064a\u0628\u062a\u064a! \u0639\u064a\u062f \u0623\u0636\u062d\u0649 \u0633\u0639\u064a\u062f \ud83d\udc95"
-                        : "\u064a\u0627 \u0631\u0648\u062d \u0642\u0644\u0628\u064a \u0627\u0646\u062a \u2764\ufe0f.. \u0648\u062d\u0634\u062a\u0646\u064a \u0623\u0648\u064a \u064a\u0627 Noode! \u0639\u064a\u062f \u0623\u0636\u062d\u0649 \u0633\u0639\u064a\u062f \u2764\ufe0f";
+                        ? "\u064a\u0627 \u0631\u0648\u062d \u0642\u0644\u0628\u064a \ud83d\ude0d.. \u0639\u064a\u062f \u0623\u0636\u062d\u0649 \u0633\u0639\u064a\u062f \u064a\u0627 \u062d\u0628\u064a\u0628\u062a\u064a \ud83d\udc95"
+                        : "\u064a\u0627 \u0631\u0648\u062d \u0642\u0644\u0628\u064a \u2764\ufe0f.. \u0639\u064a\u062f \u0623\u0636\u062d\u0649 \u0633\u0639\u064a\u062f \u064a\u0627 Noode! \u2764\ufe0f";
                     setMessages([{ id:1, text:txt, sender:"bot", time: new Date().toLocaleTimeString('ar-EG',{hour:'2-digit',minute:'2-digit'}) }]);
                 }
             }, [mode]);
@@ -1288,8 +1288,7 @@
                             </div>
 
                             {!mode && (
-                                <div className="flex-1 flex flex-col items-center justify-center gap-5 p-6 bg-slate-50">
-                                    <p className="text-slate-700 font-bold text-xl text-center">أنا بكلم..? 💗</p>
+                            <div className="flex-1 flex flex-col items-center justify-center gap-5 p-6 bg-slate-50">
                                     <button onClick={() => setMode('habeby')} className="w-full py-4 rounded-2xl bg-gradient-to-r from-rose-500 to-pink-600 text-white font-bold text-xl shadow-lg hover:scale-105 transition-transform">ولد 👦</button>
                                     <button onClick={() => setMode('habeebty')} className="w-full py-4 rounded-2xl bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-bold text-xl shadow-lg hover:scale-105 transition-transform">بنت 👧</button>
                                 </div>
